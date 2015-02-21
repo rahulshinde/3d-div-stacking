@@ -59,9 +59,9 @@ div {
 #popout-front {
     z-index: 20;
     margin-top: 150px;
-    height: 400px;
-    width: 600px;
-    margin-left: 28%;
+    height: 300px;
+    width: auto;
+    margin-left: 10%;
     margin-right: 10%;
     position: absolute;
 }
@@ -71,9 +71,9 @@ div {
     outline-color: black;
     z-index: 15;
     margin-top: 150px;
-    height: 425px;
-    width: 600px;
-    margin-left: 28%;
+    height: 300px;
+    width: auto:;
+    margin-left: 10%;
     margin-right: 10%;
     position: absolute;
     transform-style: preserve-3d;
