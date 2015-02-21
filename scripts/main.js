@@ -16,30 +16,48 @@
  *  limitations under the License
  *
  */
-(function () {
-    'use strict';
 
-    var navdrawerContainer = document.querySelector('.navdrawer-container');
-    var appbarElement = document.querySelector('.app-bar');
-    var menuBtn = document.querySelector('.menu');
-    var main = document.querySelector('main');
+$(document).ready(function(){
 
-    function closeMenu() {
-        appbarElement.classList.remove('open');
-        navdrawerContainer.classList.remove('open');
-    }
+   $('#home-screen2').hide(0);
+   $('#popout-front').hide(0);
+   $('#popout-shadow').hide(0)
+});
 
-    function toggleMenu() {
-        appbarElement.classList.toggle('open');
-        navdrawerContainer.classList.toggle('open');
-    }
 
-    main.addEventListener('ontouchstart', closeMenu);
-    main.addEventListener('click', closeMenu);
-    menuBtn.addEventListener('click', toggleMenu);
-    navdrawerContainer.addEventListener('click', function (event) {
-        if (event.target.nodeName === 'A' || event.target.nodeName === 'LI') {
-            closeMenu();
-        }
+$(document).ready(function(){
+
+   $('#animate1').click(function()  
+    {  
+        $('#home-screen1').fadeTo('fast', 0);
+        $('#home-screen2').fadeTo('fast', 1);
+        $('#popout-front').fadeTo('slow', 1);
+        $('#popout-shadow').fadeTo('slow', .3)
     });
-})();
+
+});
+
+$(document).ready(function(){
+
+   $('#animate2').click(function()  
+    {  
+        $('#home-screen1').fadeTo('fast', 1);
+        $('#home-screen2').fadeTo('fast', 0);
+        $('#popout-front').fadeTo('slow', 0);
+        $('#popout-shadow').fadeTo('slow', 0)
+    }); 
+});
+
+//attempting to make one single div
+
+// $(document).ready(function(){
+
+//    $('#animate1').click(function()  
+//     {  
+//         .find(".home-screen1").css(
+//         "webkit-transform", "perspective(1000px) rotateX(45deg)",
+//         "webkit-transform", "perspective(1500px) rotateY(45deg)"
+//         );
+
+//     });
+// });
