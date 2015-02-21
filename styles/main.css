@@ -32,7 +32,18 @@ div {
     
 }
 
-#home-screen {
+#home-screen1 {
+    z-index: 10;
+    margin-top: 100px;
+    height: 500px;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+}
+
+#home-screen2 {
+    z-index: 1;
     margin-top: 100px;
     height: 500px;
     width: auto;
@@ -41,8 +52,38 @@ div {
     position: absolute;
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateX(45deg);
-    transform: perspective(1000px) rotateY(45deg);
+    transform: perspective(1500px) rotateY(45deg);
 
+}
+
+#popout-front {
+    z-index: 20;
+    margin-top: 150px;
+    height: 400px;
+    width: 600px;
+    margin-left: 28%;
+    margin-right: 10%;
+    position: absolute;
+}
+
+#popout-shadow {
+    background-color: black;
+    outline-color: black;
+    z-index: 15;
+    margin-top: 150px;
+    height: 425px;
+    width: 600px;
+    margin-left: 28%;
+    margin-right: 10%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(45deg);
+    transform: perspective(1500px) rotateY(45deg);
+
+}
+
+#dog-s {
+    visibility: hidden;
 }
 
 #background {
@@ -52,6 +93,8 @@ div {
     margin-left: auto;
     margin-right: auto }
 }
+
+
 
 button {
     height:20px; 
