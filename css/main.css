@@ -1,0 +1,441 @@
+
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'apercubold';
+    src: url('../fonts/ApercuBold-webfont.eot');
+    src: url('../fonts/ApercuBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ApercuBold-webfont.woff2') format('woff2'),
+         url('../fonts/ApercuBold-webfont.woff') format('woff'),
+         url('../fonts/ApercuBold-webfont.ttf') format('truetype'),
+         url('../fonts/ApercuBold-webfont.svg#apercubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'griffithgothicblack';
+    src: url('../fonts/GriffithGothic-Black-webfont.eot');
+    src: url('../fonts/GriffithGothic-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GriffithGothic-Black-webfont.woff2') format('woff2'),
+         url('../fonts/GriffithGothic-Black-webfont.woff') format('woff'),
+         url('../fonts/GriffithGothic-Black-webfont.ttf') format('truetype'),
+         url('../fonts/GriffithGothic-Black-webfont.svg#griffithgothicblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+  /* Positioning */
+
+  /* Box-model */
+
+  /* Typography */
+
+  /* Visual */
+
+  /* Misc */
+
+
+
+.title {
+  /* Positioning */
+  position: relative;
+  float: right;
+  margin-right: 10%;
+  top: 12px;
+  z-index: 1;
+  /* Box-model */
+  /* Typography */
+  font-family: griffithgothicblack;
+  font-size: 35px;
+  /* Visual */
+  /* Misc */
+  
+}
+
+a:link,
+a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.gradient-box {
+  background: -webkit-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* Standard syntax */
+  border: 2px solid #FFF;
+  border-radius: 9px;
+}
+
+.login {
+  /* Positioning */
+  clear: right;
+  float: right;
+  position: relative;
+  top: -10px;
+  right: 15%;
+  /* Box-model */
+  width: 58px;
+  padding: 2px 10px;
+  /* Typography */
+  font-family: apercubold;
+  font-size: 15px;
+  /* Visual */
+  /* Misc */  
+}
+
+.marquee {
+  /* Positioning */
+  margin: 0 auto;
+  /* Box-model */
+  width: 80%;
+  height: 40px;
+  overflow: hidden;
+  /* Typography */
+  /* Visual */
+  background-color: #FFF;
+  border: solid ;
+  /* Misc */
+}
+
+.staticbox h3 {
+    /* Positioning */
+    text-align: center;
+    /* Box-model */
+    /* Typography */
+    font-family: griffithgothicblack;
+    font-size: 18px;
+    /* Visual */
+    /* Misc */    
+  }
+
+.align-right {
+  text-align: right;
+}
+
+.static-table {
+    /* Positioning */
+    margin: auto;
+    /* Box-model */
+    /* Typography */
+    font-family: apercubold;
+    font-size: 12px;
+    /* Visual */
+    /* Misc */    
+  }
+
+.marquee h2 {
+  /* Positioning */
+  /* Box-model */
+  margin-top: 2px;
+  /* Typography */
+  font-family: griffithgothicblack;
+  font-size: 25px;
+  /* Visual */
+  /* Misc */
+}
+
+/*========================
+      MOBILE
+  ========================*/
+
+@media screen and (max-width: 599px) {
+
+  .wrapper {
+  background: -webkit-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* Standard syntax */
+  }
+
+  .background {
+    display: none;
+  }
+
+  /*========================
+      HEADER
+    ========================*/
+
+  .header {
+    height: 75px;
+  }
+
+  .title {
+    /* Positioning */
+      position: relative;
+    /* Box-model */
+      margin-right: 5%;
+    /* Typography */
+  
+    /* Visual */
+      z-index: 1;
+    /* Misc */
+  }
+
+  .login {
+    /* Positioning */
+      position: relative;
+    /* Box-model */
+      width: auto;
+      margin-right: 5%;
+    /* Typography */
+    /* Visual */
+      z-index: 3;
+    /* Misc */
+  }
+
+  .login a {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-size: 20px;
+    /* Visual */
+    /* Misc */
+  }
+
+  .marquee {
+    /* Positioning */
+      position: relative;
+      top: -35px;
+    /* Box-model */
+      clear: right;
+      width: 90%;
+    /* Typography */
+    /* Visual */
+      z-index: 2;
+    /* Misc */
+  }
+
+  /*========================
+      CONTAINER
+    ========================*/
+    #search-nav {
+      /* Positioning */
+      /* Box-model */
+      width: 100%;
+      padding-left: 0;
+      /* Typography */
+      /* Visual */
+      z-index: 3;
+      /* Misc */
+    }
+
+    .search-li {
+      padding-left: 0;
+    }
+  
+    .search-li li {
+      /* Positioning */
+      /* Box-model */
+      padding: 20px 21px;
+      margin-bottom: 10px;
+      /* Typography */
+      font-family: apercubold;
+      font-size: 20px;
+      /* Visual */
+      /* Misc */
+    }
+
+    .static {
+      /* Positioning */
+      /* Box-model */
+      width: 100%;
+      padding-left: 0;
+      /* Typography */
+      /* Visual */
+      /* Misc */    
+    }
+
+    .staticbox {
+      /* Positioning */
+      /* Box-model */
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      padding-left: 0;
+      /* Typography */
+      /* Visual */
+      background-color: #FFF;
+      border: 3px solid #000;
+      /* Misc */    
+    }
+
+    .links-list {
+      margin-top: 0;
+      padding-left: 0;
+    }
+  
+    .quick-links {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .quick-links li {
+      /* Positioning */
+      /* Box-model */
+      padding: 20px 21px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      /* Typography */
+      font-family: apercubold;
+      font-size: 20px;
+      /* Visual */
+      /* Misc */
+    }
+
+}
+
+
+/*========================
+      DESKTOP
+  ========================*/
+
+  .background {
+    /* Positioning */
+    position: fixed;
+    /* Box-model */
+    width: 65%;
+    left: 60%;
+    margin: 28px 0 0 -37.5%;
+
+    /* Typography */
+
+    /* Visual */
+
+    /* Misc */
+  }
+
+@media screen and (min-width: 600px) {
+
+  /*========================
+      HEADER
+    ========================*/
+  .header {
+    position: relative;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 960px;
+  }
+  
+  .login {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .marquee {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .title {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  /*========================
+      CONTAINER
+    ========================*/
+  
+  .container {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 960px;
+  }
+  
+  #search-nav {
+    /* Positioning */
+    position: relative;
+    top: 20px;
+    /* Box-model */
+    width: 70%;
+    margin: 0 auto;
+    /* Typography */
+    /* Visual */
+    z-index: 3;
+    /* Misc */
+  }
+  
+  .search-li li {
+    /* Positioning */
+    /* Box-model */
+    padding: 17px 30px;
+    margin-bottom: 10px;
+    /* Typography */
+    font-family: apercubold;
+    font-size: 20px;
+    /* Visual */
+    /* Misc */
+  }
+  
+  .static {
+    /* Positioning */
+    float: right;
+    /* Box-model */
+    width: 35%;
+    margin-right: -60px;
+    margin-left: 20px;
+    /* Typography */
+    /* Visual */
+    /* Misc */    
+  }
+
+  .staticbox {
+    /* Positioning */
+    position: relative;
+    top: -120px;
+    /* Box-model */
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    /* Typography */
+    /* Visual */
+    background-color: #FFF;
+    border: 3px solid #000;
+    /* Misc */    
+  }
+
+  .links-list {
+    margin-top: 0;
+  }
+  
+  .quick-links {
+    position: relative;
+    top: -120px;
+    float: left;
+    width: 35%;
+    margin-right: 20px;
+    margin-left: -60px;
+    margin-top: 0;
+  }
+
+  .quick-links li {
+    /* Positioning */
+    /* Box-model */
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* Typography */
+    font-family: apercubold;
+    font-size: 13px;
+    /* Visual */
+    /* Misc */
+  }
+
+}
+
