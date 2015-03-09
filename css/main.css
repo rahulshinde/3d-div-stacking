@@ -184,6 +184,10 @@ ul {
     /* Misc */
   }
 
+  #title {
+    font-size: 30px;
+  }
+
   .login {
     /* Positioning */
       position: relative;
@@ -215,17 +219,6 @@ ul {
     /* Typography */
     /* Visual */
       z-index: 2;
-    /* Misc */
-  }
-
-  .marquee h2 {
-    /* Positioning */
-    /* Box-model */
-    margin-top: 2px;
-    /* Typography */
-    font-family: griffithgothicblack;
-    font-size: 20px;
-    /* Visual */
     /* Misc */
   }
 
@@ -355,17 +348,6 @@ ul {
   .marquee {
     position: relative;
     z-index: 2;
-  }
-
-  .marquee h2 {
-    /* Positioning */
-    /* Box-model */
-    margin-top: 2px;
-    /* Typography */
-    font-family: griffithgothicblack;
-    font-size: 25px;
-    /* Visual */
-    /* Misc */
   }
   
   .title {
