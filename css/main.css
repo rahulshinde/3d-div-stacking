@@ -218,6 +218,17 @@ ul {
     /* Misc */
   }
 
+  .marquee h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 2px;
+    /* Typography */
+    font-family: griffithgothicblack;
+    font-size: 20px;
+    /* Visual */
+    /* Misc */
+  }
+
   /*========================
       CONTAINER
     ========================*/
@@ -344,6 +355,17 @@ ul {
   .marquee {
     position: relative;
     z-index: 2;
+  }
+
+  .marquee h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 2px;
+    /* Typography */
+    font-family: griffithgothicblack;
+    font-size: 25px;
+    /* Visual */
+    /* Misc */
   }
   
   .title {
