@@ -191,6 +191,10 @@ ul {
   background: linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* Standard syntax */
   }
 
+  .container {
+    overflow-x: hidden;
+  }
+
   .background {
     display: none;
   }
