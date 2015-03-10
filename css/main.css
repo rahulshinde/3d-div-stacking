@@ -13,7 +13,7 @@
          url('../fonts/ApercuBold-webfont.woff2') format('woff2'),
          url('../fonts/ApercuBold-webfont.woff') format('woff'),
          url('../fonts/ApercuBold-webfont.ttf') format('truetype'),
-         url('../fonts/ApercuBold-webfont.svg#apercubold') format('svg');
+         url('../fonts/ApercuBold-webfont.svg#apercumedium') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -31,6 +31,20 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'apercumedium';
+    src: url('../fonts/Apercu Medium-webfont.eot');
+    src: url('../fonts/Apercu Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Apercu Medium-webfont.woff2') format('woff2'),
+         url('../fonts/Apercu Medium-webfont.woff') format('woff'),
+         url('../fonts/Apercu Medium-webfont.ttf') format('truetype'),
+         url('../fonts/Apercu Medium-webfont.svg#apercumedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
   /* Positioning */
 
@@ -70,6 +84,22 @@ ul {
   list-style-type: none;
 }
 
+::-webkit-input-placeholder {
+   color: #FFF;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #FFF;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #FFF;  
+}
+
+:-ms-input-placeholder {  
+   color: #FFF;  
+}
+
 .gradient-box {
   background: -webkit-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Opera 11.1 to 12.0 */
@@ -90,7 +120,7 @@ ul {
   width: 58px;
   padding: 2px 10px;
   /* Typography */
-  font-family: apercubold;
+  font-family: apercumedium;
   font-size: 15px;
   /* Visual */
   /* Misc */  
@@ -98,6 +128,7 @@ ul {
 
 .marquee {
   /* Positioning */
+  display: block;
   margin: 0 auto;
   /* Box-model */
   width: 80%;
@@ -130,7 +161,7 @@ ul {
     margin: auto;
     /* Box-model */
     /* Typography */
-    font-family: apercubold;
+    font-family: apercumedium;
     font-size: 12px;
     /* Visual */
     /* Misc */    
@@ -246,7 +277,7 @@ ul {
       padding: 20px 21px;
       margin-bottom: 10px;
       /* Typography */
-      font-family: apercubold;
+      font-family: apercumedium;
       font-size: 20px;
       /* Visual */
       /* Misc */
@@ -292,7 +323,7 @@ ul {
       margin-top: 0;
       margin-bottom: 10px;
       /* Typography */
-      font-family: apercubold;
+      font-family: apercumedium;
       font-size: 20px;
       /* Visual */
       /* Misc */
@@ -304,6 +335,40 @@ ul {
       height: 100%;
     }
 
+    /*========================
+      SEARCH POPOUT
+    ========================*/
+    .search-bar {
+      /* Positioning */
+      /* Box-model */
+      padding: 0px 20px;
+      /* Typography */
+      /* Visual */
+      /* Misc */
+    }
+
+    .search-type {
+      /* Positioning */
+      /* Box-model */
+      padding: 10px 10px;
+      /* Typography */
+      /* Visual */
+      border-color: rgba(0, 0, 0, 0);
+      outline: 0;
+      /* Misc */
+    }
+
+    input[type=text] {
+      /* Positioning */
+      /* Box-model */
+      /* Typography */
+      font-family: apercumedium;
+      font-size: 28px;
+      color: #FFF;
+      /* Visual */
+      background-color: rgba(0, 0, 0, 0);
+      /* Misc */
+    }
 }
 
 
@@ -311,13 +376,20 @@ ul {
       DESKTOP
   ========================*/
 
+
+@media screen and (min-width: 600px) {
+
+  /*========================
+      HEADER
+    ========================*/
+
   .background {
     /* Positioning */
-    position: fixed;
+    position: absolute;
+    display: block;
     /* Box-model */
     width: 65%;
-    left: 60%;
-    margin: 28px 0 0 -37.5%;
+    margin: 0 17.5%;
 
     /* Typography */
 
@@ -326,11 +398,6 @@ ul {
     /* Misc */
   }
 
-@media screen and (min-width: 600px) {
-
-  /*========================
-      HEADER
-    ========================*/
   .header {
     position: relative;
     margin-top: 40px;
@@ -346,7 +413,9 @@ ul {
   }
   
   .marquee {
+    width: 80%;
     position: relative;
+    left: 36px;
     z-index: 2;
   }
   
@@ -386,7 +455,7 @@ ul {
     padding: 17px 30px;
     margin-bottom: 10px;
     /* Typography */
-    font-family: apercubold;
+    font-family: apercumedium;
     font-size: 20px;
     /* Visual */
     /* Misc */
@@ -441,7 +510,7 @@ ul {
     margin-top: 0;
     margin-bottom: 10px;
     /* Typography */
-    font-family: apercubold;
+    font-family: apercumedium;
     font-size: 13px;
     /* Visual */
     /* Misc */
