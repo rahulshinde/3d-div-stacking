@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html>
-	<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> decker library </title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		
 	</head>
 	<body>
-    
     <div class = "container">
-      <form>
-        full name
-        <input type="text" required>
-        <br>
-        email address
-        <input type="text" required>
-        <br>
-        MICA id number
-        <input type="text" required>
-        <br>
-        title
-        <textarea rows="4" cols="50" required>
-        </textarea>
-        <br>
-        author / editor
-        <textarea rows="4" cols="50" required>
-        </textarea>
-        <br>
-        publisher
-        <input type="text">
-        <br>
-        publication date
-        <input type="text">
-        <br>
-        publication date
-        <input type="text">
-        <br>
-        isbn
-        <input type="text">
-        <br>
-        this edition only?
-        <input type="radio" name="q1" value="y">Yes
-        <input type="radio" name="q1" value="n">No
-        <br>
-        <input type="submit">
-      </form>
-      
-      <div class="gradient-box">
-          <a id ="link" href="#">back to home</a>
-      </div> <!-- end advanced search -->
-      
+      <div class ="form-div">
+        <form>
+          <select class = "gradient-box">
+            <option value="All Collections">interlibrary loan book</option>
+            <option value="Book Arts Catalog">interlibrary loan article</option>
+          </select>
+          <br>
+          <span class="form-text">full name</span>
+          <br>
+          <input type="text" required>
+          <br>
+          <br>
+          <span class="form-text">email address</span>
+          <br>
+          <input type="text" required>
+          <br>
+          <br>
+          <span class="form-text">MICA id number</span>
+          <br>
+          <input type="text" required>
+          <br>
+          <br>
+          <span class="form-text">title</span>
+          <br>
+          <input type="text" required>
+          <br>
+          <br>
+          <span class="form-text">author / editor</span>
+          <br>
+          <input type="text" required>
+          <br>
+          <br>
+          <span class="form-text">publisher</span>
+          <br>
+          <input type="text">
+          <br>
+          <br>
+          <span class="form-text">publication date</span>
+          <br>
+          <input type="text">
+          <br>
+          <br>
+          <span class="form-text">isbn</span>
+          <br>
+          <input type="text">
+          <br>
+          <br>
+          <span class="form-text">this edition only?</span>
+          <br>
+          <input type="radio" name="q1" value="y">Yes
+          <input type="radio" name="q1" value="n">No
+        </form>
+        
+        <div class="gradient-box link-r">
+            <a id ="link" href="#">submit</a>
+        </div> <!-- end advanced search -->
+
+        <div class="gradient-box link-l">
+            <a id ="link" href="#">back to home</a>
+        </div> <!-- end advanced search -->
+      </div>
     </div>
 		<!-- build:js scrips/site.js -->
 		<!-- bower:js  -->

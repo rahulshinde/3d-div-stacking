@@ -7,36 +7,41 @@
 		
 	</head>
 	<body>
-    
-    <div class = "container">
-      
-      <div class = "gradient-box">
-        <form class = "search-bar">
-          <input class = "search-type" type="text" placeholder="search" required>
-        </form>
-      </div> <!-- end search -->
-      
-      <div>
-        <select class = "gradient-box">
-          <option value="volvo">All Collections</option>
-          <option value="saab">Book Arts Catalog</option>
-          <option value="mercedes">Master Thesis Collection</option>
-          <option value="audi">Artist Files</option>
-        </select>
-      </div> <!-- end dropdown -->
-      
-      <div class="gradient-box">
-          <a id ="link" href="#">advanced search</a>
-      </div> <!-- end advanced search -->
-
-      <div class="gradient-box">
+    <div class="wrapper">
+      <div class = "container">
+        
+        <div class = "gradient-box mobile-object" id="search-nav">
+          <form class = "search-bar">
+            <input class = "search-type" type="text" placeholder="???" required>
+          </form>
+        </div> <!-- end search -->
+        
+        <div class="link-l">
+          <select class = "gradient-box multi-choice">
+            <option value="All Collections">All Collections</option>
+            <option value="Book Arts Catalog">Book Arts Catalog</option>
+            <option value="Masters Thesis">Master Thesis Collection</option>
+            <option value="Artist Files">Artist Files</option>
+          </select>
+        </div> <!-- end dropdown -->
+        
+        <div class="gradient-box link-search">
+          <a id ="link" href="#">advanced search options</a></li> 
+        </div> <!-- end advanced search -->
+  
+        <div class="gradient-box link-r">
           <a id ="link" href="#">search</a>
-      </div> <!-- end advanced search -->
-      
-      <div class="gradient-box">
+        </div> <!-- end search -->
+        
+        <div class="back gradient-box link-l">
           <a id ="link" href="#">back to home</a>
-      </div> <!-- end advanced search -->
-      
+        </div> <!-- end search -->
+  
+        <div class="close gradient-box link-l">
+          <a id ="link" href="#">close tab</a>
+        </div> <!-- end search -->
+        
+      </div>
     </div>
 		<!-- build:js scrips/site.js -->
 		<!-- bower:js  -->

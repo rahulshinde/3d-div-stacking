@@ -177,6 +177,38 @@ ul {
   /* Misc */
 }
 
+.search-bar {
+  /* Positioning */
+  /* Box-model */
+  padding: 0px 20px;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.search-type {
+  /* Positioning */
+  /* Box-model */
+  padding: 10px 10px;
+  /* Typography */
+  /* Visual */
+  border-color: rgba(0, 0, 0, 0);
+  outline: 0;
+  /* Misc */
+}
+
+input[type=text] {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  font-family: apercumedium;
+  font-size: 21px;
+  color: #FFF;
+  /* Visual */
+  background-color: rgba(0, 0, 0, 0);
+  /* Misc */
+}
+
 /*========================
       MOBILE
   ========================*/
@@ -184,10 +216,10 @@ ul {
 @media screen and (max-width: 599px) {
 
   .wrapper {
-  background: -webkit-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* Standard syntax */
+    background: -webkit-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* Standard syntax */
   }
 
   .container {
@@ -196,6 +228,10 @@ ul {
 
   .background {
     display: none;
+  }
+
+  .gradient-box {
+    width: 100%;
   }
 
   /*========================
@@ -341,37 +377,174 @@ ul {
     /*========================
       SEARCH POPOUT
     ========================*/
-    .search-bar {
-      /* Positioning */
-      /* Box-model */
-      padding: 0px 20px;
-      /* Typography */
-      /* Visual */
-      /* Misc */
-    }
 
-    .search-type {
+    .link-l a,
+    .link-r a,
+    .link-search a {
       /* Positioning */
       /* Box-model */
-      padding: 10px 10px;
-      /* Typography */
-      /* Visual */
-      border-color: rgba(0, 0, 0, 0);
-      outline: 0;
-      /* Misc */
-    }
-
-    input[type=text] {
-      /* Positioning */
-      /* Box-model */
+      padding: 20px 21px;
+      margin-top: 0;
       /* Typography */
       font-family: apercumedium;
-      font-size: 28px;
-      color: #FFF;
+      font-size: 20px;
       /* Visual */
-      background-color: rgba(0, 0, 0, 0);
       /* Misc */
     }
+
+    .back {
+      display: none;
+    }
+
+    .mobile-object,
+    .link-l,
+    .link-r,
+    .link-search {
+      margin-bottom: 10px;
+    }
+
+    .multi-choice {
+      padding: 20px 21px;
+      margin-top: 0;
+      /* Typography */
+      font-family: apercumedium;
+      font-size: 20px;
+      /* Visual */
+      color: #fff;
+      /* Misc */
+    }
+    
+    /*========================
+      SEARCH RESULTS
+    ========================*/
+
+
+    .img-web,
+    .img-web-center,
+    .img-web-last {
+      display: none;
+    }
+
+    .description-mobile {
+      /* Positioning */
+      /* Box Model*/
+      margin-bottom: 10px;
+      /* Typography */
+      /* Visual */
+      background-color: #fff;
+      border: 3px solid #000;
+      /* Misc */  
+    }
+
+    .description-mobile h1 {
+
+      /* Positioning */
+      float: left;
+      /* Box Model*/
+      padding-left: 10px;
+      /* Typography */
+      font-family: apercumedium;
+      font-size: 20px;
+      color: #000;
+      /* Visual */
+      
+    }
+
+    .description-mobile p {
+
+      /* Positioning */
+      /* Box Model*/
+      padding-left: 40px;
+      /* Typography */
+      font-family: apercumedium;
+      font-size: 15px;
+      color: #000;
+      /* Visual */
+      
+    }
+
+    /*========================
+      ADVANCED SEARCH
+    ========================*/
+
+    .category-left,
+    .category-center,
+    .category-right {
+      position: relative;
+      margin-bottom: 10px;
+      width: 100%;
+      background-color: #FFF;
+      border: 3px solid #000;
+    }
+
+    .category-left h1,
+    .category-center h1,
+    .category-right h1 {
+      /* Positioning */
+      /* Box-model */
+      /* Typography */
+      font-family: griffithgothicblack;
+      font-size: 18px;
+      /* Visual */
+      color: #000;
+      /* Misc */
+    }
+
+    .check-form {
+      padding-left: 10px;
+    }
+    
+
+    input[type='checkbox'] {
+      /* Positioning */
+      /* Box-model */
+      width:40px;
+      height:40px;
+      /* Typography */
+      /* Visual */     
+      background:white;
+      border-radius:5px;
+      border:1px solid #555;
+      /* Misc */
+      -webkit-appearance:none;
+
+    }
+    
+    input[type='checkbox']:checked {
+      background: -webkit-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* Standard syntax */
+    }
+
+    .check-text {
+      position: relative;
+      top: -18px;
+      font-family: apercumedium;
+      font-size: 15px;
+    }
+    
+    .view-all {
+      /* Positioning */
+      /* Box-model */
+      width: 95%;
+      margin-left: 2.5%;
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 4px;
+      /*margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3px;*/
+      /* Typography */
+      font-family: apercumedium;
+      font-size: 13px;
+      /* Visual */
+      color: #fff;
+      /* Misc */
+    }
+
+
 }
 
 
@@ -525,5 +698,235 @@ ul {
       height: 100%;
     }
 
+    /*========================
+      SEARCH POPOUT
+    ========================*/
+    .link-l a,
+    .link-r a,
+    .link-search a,
+    .multi-choice {
+    /* Positioning */
+    /* Box-model */
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    /* Typography */
+    font-family: apercumedium;
+    font-size: 13px;
+    /* Visual */
+    color: #fff;
+    /* Misc */
+  }
+
+    .multi-choice {
+      width: 100%;
+    }
+
+    .link-l {
+      /* Positioning */
+        float:left;
+      /* Box-model */
+        width:40%;
+        margin-bottom: 60px;
+      /* Typography */
+
+      /* Visual */
+
+      /* Misc */
+    }
+
+    .link-r {
+      /* Positioning */
+        float:right;
+      /* Box-model */
+        width: 40%;
+        margin-bottom: 60px;
+      /* Typography */
+
+      /* Visual */
+
+      /*Misc */
+    }
+
+    .link-search {
+      /* Positioning */
+        float:right;
+      /* Box-model */
+        width: 40%;
+        margin-bottom: 53px;
+      /* Typography */
+
+      /* Visual */
+
+      /* Misc */
+    }
+
+    .close {
+      display: none;
+    }
+
+    /*========================
+      SEARCH RESULTS
+    ========================*/
+    .img-container {
+      float: none;
+      margin: 0 auto;
+    }
+    
+    .img-web img,
+    .img-web-center img,
+    .img-web-last img {
+      width: 100%;
+      height: auto;
+    }
+
+    .img-web {
+      float:left;
+      margin-left: 10%;
+      width: 25%;
+      margin-right: 3%;
+    }
+
+    .img-web-center {
+      float:left;
+      width: 25%;
+      margin-right: 3%;
+    }
+
+    .img-web-last {
+      float:left;
+      margin-right: -10%;
+      width: 25%;
+    }
+
+    .description {
+      /* Positioning */
+      display: none;
+      position: relative;
+      top: -190px;
+      float: none;
+      /* Box-model */
+      width: 100%;
+      padding-left: 2%;
+      /* Typography */
+      font-family: apercumedium;
+      font-size: 13px;
+      /* Visual */
+      color: #fff;
+      /* Misc */
+    }
+
+    .img-web:hover .description,
+    .img-web-center:hover .description,
+    .img-web-last:hover .description {
+      display: block;
+    }
+
+
+    .description-mobile {
+      display: none;
+    }
+
+    /*========================
+      ADVANCED SEARCH
+    ========================*/
+    .category-left {
+      margin-left: 5%;
+    }
+    
+    .category-left,
+    .category-center {
+      margin-right: 3%;
+    }
+
+    .category-left,
+    .category-center,
+    .category-right {
+      position: relative;
+      float: left;
+      margin-bottom: 10px;
+      min-height: 217px;
+      width: 20%;
+      background-color: #FFF;
+      border: 3px solid #000;
+    }
+
+    .category-left h1,
+    .category-center h1,
+    .category-right h1 {
+      /* Positioning */
+      /* Box-model */
+      /* Typography */
+      font-family: griffithgothicblack;
+      font-size: 18px;
+      /* Visual */
+      color: #000;
+      /* Misc */
+    }
+
+    .category-top {
+      margin-top: 30px;
+    }
+
+    .category-bottom {
+      margin-bottom: 30px;
+    }
+
+    .check-form {
+      padding-left: 10px;
+    }
+    
+
+    input[type='checkbox'] {
+      /* Positioning */
+      /* Box-model */
+      width:15px;
+      height:15px;
+      /* Typography */
+      /* Visual */     
+      background:white;
+      border-radius:5px;
+      border:1px solid #555;
+      /* Misc */
+      -webkit-appearance:none;
+
+    }
+    
+    input[type='checkbox']:checked {
+      background: -webkit-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* Standard syntax */
+    }
+
+    .check-text {
+      position: relative;
+      top: -6px;
+      font-family: apercumedium;
+      font-size: 10px;
+    }
+    
+    .view-all {
+      /* Positioning */
+      position: absolute;
+      bottom: 5px;
+      left: 5%;
+      /* Box-model */
+      width: 90%;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      /*margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3px;*/
+      /* Typography */
+      font-family: apercumedium;
+      font-size: 13px;
+      /* Visual */
+      color: #fff;
+      /* Misc */
+    }
 }
+
 
