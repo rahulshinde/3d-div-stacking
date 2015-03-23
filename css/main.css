@@ -210,6 +210,26 @@ input[type=text] {
 }
 
 /*========================
+      LOAN
+  ========================*/
+
+.form-text{
+    /* Positioning */
+    display: block;
+    /* Box-model */
+    /* Typography */
+    font-family: griffithgothicblack;
+    font-size: 18px;
+    /* Visual */
+    color: #000;
+    /* Misc */
+  }
+  
+  .gap {
+    margin-bottom: 20px;
+  }
+
+/*========================
       MOBILE
   ========================*/
 
@@ -295,255 +315,286 @@ input[type=text] {
   /*========================
       CONTAINER
     ========================*/
-    #search-nav {
-      /* Positioning */
-      /* Box-model */
-      width: 100%;
-      padding-left: 0;
-      /* Typography */
-      /* Visual */
-      z-index: 3;
-      /* Misc */
-    }
+  #search-nav {
+    /* Positioning */
+    /* Box-model */
+    width: 100%;
+    padding-left: 0;
+    /* Typography */
+    /* Visual */
+    z-index: 3;
+    /* Misc */
+  }
+  .search-li {
+    padding-left: 0;
+  }
 
-    .search-li {
-      padding-left: 0;
-    }
+  .search-li li {
+    /* Positioning */
+    /* Box-model */
+    padding: 20px 21px;
+    margin-bottom: 10px;
+    /* Typography */
+    font-family: apercumedium;
+    font-size: 20px;
+    /* Visual */
+    /* Misc */
+  }
+  .static {
+    /* Positioning */
+    /* Box-model */
+    width: 100%;
+    padding-left: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */    
+  }
+  .staticbox {
+    /* Positioning */
+    /* Box-model */
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    /* Typography */
+    /* Visual */
+    background-color: #FFF;
+    border: 3px solid #000;
+    /* Misc */    
+  }
+  .links-list {
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  .quick-links {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .quick-links li {
+    /* Positioning */
+    /* Box-model */
+    padding: 20px 21px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* Typography */
+    font-family: apercumedium;
+    font-size: 20px;
+    /* Visual */
+    /* Misc */
+  }
+  #link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*========================
+    SEARCH POPOUT
+  ========================*/
+
+  .link-l a,
+  .link-r a,
+  .link-search a {
+    /* Positioning */
+    /* Box-model */
+    padding: 20px 21px;
+    margin-top: 0;
+    /* Typography */
+    font-family: apercumedium;
+    font-size: 20px;
+    /* Visual */
+    /* Misc */
+  }
+
+  .back {
+    display: none;
+  }
+
+  .mobile-object,
+  .link-l,
+  .link-r,
+  .link-search {
+    margin-bottom: 10px;
+  }
+
+  .multi-choice {
+    padding: 20px 21px;
+    margin-top: 0;
+    /* Typography */
+    font-family: apercumedium;
+    font-size: 20px;
+    /* Visual */
+    color: #fff;
+    /* Misc */
+  }
   
-    .search-li li {
-      /* Positioning */
-      /* Box-model */
-      padding: 20px 21px;
-      margin-bottom: 10px;
-      /* Typography */
-      font-family: apercumedium;
-      font-size: 20px;
-      /* Visual */
-      /* Misc */
-    }
+  /*========================
+    SEARCH RESULTS
+  ========================*/
 
-    .static {
-      /* Positioning */
-      /* Box-model */
-      width: 100%;
-      padding-left: 0;
-      /* Typography */
-      /* Visual */
-      /* Misc */    
-    }
+  .img-web,
+  .img-web-center,
+  .img-web-last {
+    display: none;
+  }
 
-    .staticbox {
-      /* Positioning */
-      /* Box-model */
-      margin-bottom: 10px;
-      padding-bottom: 20px;
-      padding-left: 0;
-      /* Typography */
-      /* Visual */
-      background-color: #FFF;
-      border: 3px solid #000;
-      /* Misc */    
-    }
+  .description-mobile {
+    /* Positioning */
+    /* Box Model*/
+    margin-bottom: 10px;
+    /* Typography */
+    /* Visual */
+    background-color: #fff;
+    border: 3px solid #000;
+    /* Misc */  
+  }
 
-    .links-list {
-      margin-top: 0;
-      padding-left: 0;
-    }
+  .description-mobile h1 {
+    /* Positioning */
+    float: left;
+    /* Box Model*/
+    padding-left: 10px;
+    /* Typography */
+    font-family: apercumedium;
+    font-size: 20px;
+    color: #000;
+    /* Visual */
+    
+  }
+
+  .description-mobile p {
+    /* Positioning */
+    /* Box Model*/
+    padding-left: 40px;
+    /* Typography */
+    font-family: apercumedium;
+    font-size: 15px;
+    color: #000;
+    /* Visual */
+    
+  }
+
+  /*========================
+    ADVANCED SEARCH
+  ========================*/
+
+  .category-left,
+  .category-center,
+  .category-right {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #FFF;
+    border: 3px solid #000;
+  }
+
+  .category-left h1,
+  .category-center h1,
+  .category-right h1 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-family: griffithgothicblack;
+    font-size: 18px;
+    /* Visual */
+    color: #000;
+    /* Misc */
+  }
+  .check-form {
+    padding-left: 10px;
+  }
   
-    .quick-links {
-      width: 100%;
-      margin-top: 0;
-    }
+  input[type='checkbox'] {
+    /* Positioning */
+    /* Box-model */
+    width:40px;
+    height:40px;
+    /* Typography */
+    /* Visual */     
+    background:white;
+    border-radius:5px;
+    border:1px solid #555;
+    /* Misc */
+    -webkit-appearance:none;
+  }
   
-    .quick-links li {
-      /* Positioning */
-      /* Box-model */
-      padding: 20px 21px;
-      margin-top: 0;
-      margin-bottom: 10px;
-      /* Typography */
-      font-family: apercumedium;
-      font-size: 20px;
-      /* Visual */
-      /* Misc */
-    }
+  input[type='checkbox']:checked {
+    background: -webkit-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* Standard syntax */
+  }
+  .check-text {
+    position: relative;
+    top: -18px;
+    font-family: apercumedium;
+    font-size: 15px;
+  }
+  
+  .view-all {
+    /* Positioning */
+    /* Box-model */
+    width: 95%;
+    margin-left: 2.5%;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 4px;
+    /*margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;*/
+    /* Typography */
+    font-family: apercumedium;
+    font-size: 13px;
+    /* Visual */
+    color: #fff;
+    /* Misc */
+  }
 
-    #link {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
+  /*========================
+    LOAN
+    ======================== */
+  .book-choice {
+    /* Positioning */
+    /* Box-model */
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    /* Typography */
+    font-family: apercumedium;
+    font-size: 13px;
+    /* Visual */
+    color: #fff;
+    /* Misc */
+  }
 
-    /*========================
-      SEARCH POPOUT
-    ========================*/
+  input[type='radio'] {
+    /* Positioning */
+    /* Box-model */
+    width:40px;
+    height:40px;
+    /* Typography */
+    /* Visual */     
+    background:white;
+    border-radius:40px;
+    border:1px solid #555;
+    /* Misc */
+    -webkit-appearance:none;
+  }
+  
+  input[type='radio']:checked {
+    background: -webkit-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* Standard syntax */
+  }
 
-    .link-l a,
-    .link-r a,
-    .link-search a {
-      /* Positioning */
-      /* Box-model */
-      padding: 20px 21px;
-      margin-top: 0;
-      /* Typography */
-      font-family: apercumedium;
-      font-size: 20px;
-      /* Visual */
-      /* Misc */
-    }
-
-    .back {
-      display: none;
-    }
-
-    .mobile-object,
-    .link-l,
-    .link-r,
-    .link-search {
-      margin-bottom: 10px;
-    }
-
-    .multi-choice {
-      padding: 20px 21px;
-      margin-top: 0;
-      /* Typography */
-      font-family: apercumedium;
-      font-size: 20px;
-      /* Visual */
-      color: #fff;
-      /* Misc */
-    }
-    
-    /*========================
-      SEARCH RESULTS
-    ========================*/
-
-
-    .img-web,
-    .img-web-center,
-    .img-web-last {
-      display: none;
-    }
-
-    .description-mobile {
-      /* Positioning */
-      /* Box Model*/
-      margin-bottom: 10px;
-      /* Typography */
-      /* Visual */
-      background-color: #fff;
-      border: 3px solid #000;
-      /* Misc */  
-    }
-
-    .description-mobile h1 {
-
-      /* Positioning */
-      float: left;
-      /* Box Model*/
-      padding-left: 10px;
-      /* Typography */
-      font-family: apercumedium;
-      font-size: 20px;
-      color: #000;
-      /* Visual */
-      
-    }
-
-    .description-mobile p {
-
-      /* Positioning */
-      /* Box Model*/
-      padding-left: 40px;
-      /* Typography */
-      font-family: apercumedium;
-      font-size: 15px;
-      color: #000;
-      /* Visual */
-      
-    }
-
-    /*========================
-      ADVANCED SEARCH
-    ========================*/
-
-    .category-left,
-    .category-center,
-    .category-right {
-      position: relative;
-      margin-bottom: 10px;
-      width: 100%;
-      background-color: #FFF;
-      border: 3px solid #000;
-    }
-
-    .category-left h1,
-    .category-center h1,
-    .category-right h1 {
-      /* Positioning */
-      /* Box-model */
-      /* Typography */
-      font-family: griffithgothicblack;
-      font-size: 18px;
-      /* Visual */
-      color: #000;
-      /* Misc */
-    }
-
-    .check-form {
-      padding-left: 10px;
-    }
-    
-
-    input[type='checkbox'] {
-      /* Positioning */
-      /* Box-model */
-      width:40px;
-      height:40px;
-      /* Typography */
-      /* Visual */     
-      background:white;
-      border-radius:5px;
-      border:1px solid #555;
-      /* Misc */
-      -webkit-appearance:none;
-
-    }
-    
-    input[type='checkbox']:checked {
-      background: -webkit-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* Standard syntax */
-    }
-
-    .check-text {
-      position: relative;
-      top: -18px;
-      font-family: apercumedium;
-      font-size: 15px;
-    }
-    
-    .view-all {
-      /* Positioning */
-      /* Box-model */
-      width: 95%;
-      margin-left: 2.5%;
-      padding-left: 10px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      margin-bottom: 4px;
-      /*margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 3px;*/
-      /* Typography */
-      font-family: apercumedium;
-      font-size: 13px;
-      /* Visual */
-      color: #fff;
-      /* Misc */
-    }
-
+  #yes {
+    margin-right: 10px;
+  }
 
 }
 
@@ -926,6 +977,45 @@ input[type=text] {
       /* Visual */
       color: #fff;
       /* Misc */
+    }
+
+    /*========================
+      LOAN
+    ========================*/
+
+    #form-selection {
+      margin-bottom: 10px;
+    }
+
+    .book-choice {
+      /* Positioning */
+      /* Box-model */
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 0;
+      /* Typography */
+      font-family: apercumedium;
+      font-size: 13px;
+      /* Visual */
+      color: #fff;
+      /* Misc */
+    }
+
+    .gap {
+      width:60%;
+    }
+
+    #yes,
+    #no {
+      position: relative;
+      top: -1.5px;
+      left: 5px;
+      margin-right: 10px;
+    }
+
+    .form-info {
+      margin-bottom: 10px;
     }
 }
 
