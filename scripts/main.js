@@ -4,15 +4,16 @@ SITE.accordion = {
 	init: function() {
 		enquire.register('screen and (max-width: 599px)', {
 			match : function() {
-				console.log('mobile');
+				alert('mobile');
 			},
 
 			unmatch : function() {
-				console.log('desktop')
+				alert('desktop');
 			}
 		})
 	}
 };
+
 
 SITE.features = {
 	init: function() {
