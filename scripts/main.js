@@ -5,7 +5,7 @@ SITE.accordion = {
 		enquire.register('screen and (max-width: 599px)', {
 			match : function() {
 				console.log('mobile');
-			}
+			},
 
 			unmatch : function() {
 				console.log('desktop')
