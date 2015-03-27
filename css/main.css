@@ -56,6 +56,22 @@
   /* Misc */
 
 
+img.gradient {
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+}
+
 
 .title {
   /* Positioning */
@@ -234,13 +250,6 @@ input[type=text] {
   ========================*/
 
 @media screen and (max-width: 599px) {
-
-  .wrapper {
-    background: -webkit-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(84, 62, 107, 1), rgba(255, 255, 255, 1)); /* Standard syntax */
-  }
 
   .container {
     overflow-x: hidden;
@@ -606,6 +615,10 @@ input[type=text] {
 
 @media screen and (min-width: 600px) {
 
+  .index-gradient {
+    display: none;
+  }
+
   /*========================
       HEADER
     ========================*/
@@ -852,8 +865,8 @@ input[type=text] {
     }
 
     .description {
-      /* Positioning */
-      display: none;
+      /* Positioning *//*
+      display: none;*/
       position: relative;
       top: -190px;
       float: none;
@@ -868,12 +881,12 @@ input[type=text] {
       /* Misc */
     }
 
-    .img-web:hover .description,
+    /*.img-web:hover .description,
     .img-web-center:hover .description,
     .img-web-last:hover .description {
       display: block;
     }
-
+*/
 
     .description-mobile {
       display: none;
@@ -1017,6 +1030,13 @@ input[type=text] {
     .form-info {
       margin-bottom: 10px;
     }
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.gradient {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }
 
 
