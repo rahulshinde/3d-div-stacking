@@ -1,16 +1,16 @@
 var SITE = SITE || {};
 
-SITE.accordian = {
+SITE.accordion = {
 	init: function() {
 		enquire.register('screen and (max-width: 599px)', {
 			match : function() {
-				alert('mobile');
-			},
+				console.log('mobile');
+			}
 
 			unmatch : function() {
-				alert('desktop')
+				console.log('desktop')
 			}
-		});
+		})
 	}
 };
 
