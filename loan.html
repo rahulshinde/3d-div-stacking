@@ -7,61 +7,80 @@
 		
 	</head>
 	<body>
-    <div class = "container">
+    <div class = "container" id="top-down1">
         <img class="gradient" src="img/bg.jpg">
+        <img class="background2" id="bg-height" src="img/080070-wo.png">
         <div class ="form-selection" id="form-selection">
-        <select class = "gradient-box book-choice">
-          <option value="book">interlibrary loan book</option>
-          <option value="article">interlibrary loan article</option>
-        </select>
+            <select class = "form-box book-choice">
+                <option value="book">interlibrary loan book</option>
+                <option value="article">interlibrary loan article</option>
+            </select>
       </div>
       
       <div class="form-name">
         <span class="form-text">full name</span>
         <br>
-        <input class="search-type gap gradient-box" type="text" required>
+        <div class="form-box">
+            <input class="search-type" type="text" required>
+        </div>
         <br>
         <br>
         <span class="form-text">email address</span>
         <br>
-        <input class="search-type gap gradient-box" type="text" required>
+        <div class="form-box">
+            <input class="search-type" type="text" required>
+        </div>
         <br>
         <br>
         <span class="form-text">MICA id number</span> 
         <br>
-        <input class="search-type gap gradient-box" type="text" required>
+        <div class="form-box">
+            <input class="search-type" type="text" required>
+        </div>
       </div>
       
       <div class="form-info" id="book_content">
         <span class="form-text">title</span>
         <br>
-        <input class="search-type gap gradient-box" type="text" required>
+        <div class="form-box">
+            <input class="search-type" type="text" required>
+        </div>
         <br>
         <br>
         <span class="form-text">author / editor</span>
         <br>
-        <input class="search-type gap gradient-box" type="text" required>
+        <div class="form-box">
+            <input class="search-type" type="text" required>
+        </div>
         <br>
         <br>
         <span class="form-text">publisher</span>
         <br>
-        <input class="search-type gap gradient-box" type="text">
+        <div class="form-box">
+            <input class="search-type" type="text" required>
+        </div>
         <br>
         <br>
         <span class="form-text">publication date</span>
         <br>
-        <input class="search-type gap gradient-box" type="text">
+        <div class="form-box">
+            <input class="search-type" type="text" required>
+        </div>
         <br>
         <br>
         <span class="form-text">isbn</span>
         <br>
-        <input class="search-type gap gradient-box" type="text">
+        <div class="form-box">
+            <input class="search-type" type="text" required>
+        </div>
         <br>
         <br>
-        <span class="form-text">this edition only?</span>
-        <br>
-        <input type="radio" name="q1" value="y"><span class="check-text" id="yes">yes</span>
-        <input type="radio" name="q1" value="n"><span class="check-text" id="no">no</span>
+        <div class="form-bottom">
+            <span class="form-text">this edition only?</span>
+            <br>
+            <input type="radio" name="q1" value="y"><span class="check-text" id="yes">yes</span>
+            <input type="radio" name="q1" value="n"><span class="check-text" id="no">no</span>
+        </div>
       </div>
 
       <!-- <div class="form-info article_content">
@@ -106,7 +125,7 @@
       </div> -->
           
         
-        <div class="gradient-box link-r">
+        <div class="gradient-box link-r" id="link-bottom">
             <a id ="link" href="#">submit</a>
         </div> <!-- end advanced search -->
 

@@ -100,19 +100,19 @@ ul {
 }
 
 ::-webkit-input-placeholder {
-   color: #FFF;
+   color: #000;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #FFF;  
+   color: #000;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #FFF;  
+   color: #000;  
 }
 
 :-ms-input-placeholder {  
-   color: #FFF;  
+   color: #000;  
 }
 
 .gradient-box {
@@ -122,6 +122,11 @@ ul {
   background: linear-gradient(rgba(51, 51, 51, .7), rgba(153, 153, 153, .7)); /* Standard syntax */
   border: 2px solid #FFF;
   border-radius: 9px;
+}
+
+.form-box {
+  background: #FFF;
+  border: 3px solid #000;
 }
 
 .login {
@@ -219,31 +224,39 @@ input[type=text] {
   /* Typography */
   font-family: apercumedium;
   font-size: 21px;
-  color: #FFF;
+  color: #000;
   /* Visual */
   background-color: rgba(0, 0, 0, 0);
   /* Misc */
+}
+
+.collections-form {
+  padding-bottom: 5px;
+}
+
+.collections-form select {
+      color: #000;
 }
 
 /*========================
       LOAN
   ========================*/
 
-.form-text{
-    /* Positioning */
-    display: block;
-    /* Box-model */
-    /* Typography */
-    font-family: griffithgothicblack;
-    font-size: 18px;
-    /* Visual */
-    color: #000;
-    /* Misc */
-  }
-  
-  .gap {
-    margin-bottom: 20px;
-  }
+.form-name {
+  margin-bottom: 30px; 
+}
+
+.form-text {
+  /* Positioning */
+  display: block;
+  /* Box-model */
+  /* Typography */
+  font-family: griffithgothicblack;
+  font-size: 18px;
+  /* Visual */
+  color: #000;
+  /* Misc */
+}
 
 /*========================
       MOBILE
@@ -442,15 +455,21 @@ input[type=text] {
     SEARCH RESULTS
   ========================*/
 
-  .img-web,
-  .img-web-center,
-  .img-web-last {
+  .collections-form select {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .img-mobile {
     display: none;
   }
 
-  .description-mobile {
+  .description {
     /* Positioning */
     /* Box Model*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
     margin-bottom: 10px;
     /* Typography */
     /* Visual */
@@ -459,7 +478,7 @@ input[type=text] {
     /* Misc */  
   }
 
-  .description-mobile h1 {
+  .description-mobile-header {
     /* Positioning */
     float: left;
     /* Box Model*/
@@ -472,10 +491,10 @@ input[type=text] {
     
   }
 
-  .description-mobile p {
+  .description-mobile,
+  .description {
     /* Positioning */
     /* Box Model*/
-    padding-left: 40px;
     /* Typography */
     font-family: apercumedium;
     font-size: 15px;
@@ -564,6 +583,11 @@ input[type=text] {
   /*========================
     LOAN
     ======================== */
+
+  .form-selection select {
+    width: 100%;
+    color: #000;
+  }
   .book-choice {
     /* Positioning */
     /* Box-model */
@@ -619,17 +643,60 @@ input[type=text] {
     display: none;
   }
 
+  #top-down {
+    margin-top: 75px;
+  }
+
+  #top-down1 {
+    margin-top: 25px;
+  }
+
+  #top-down2 {
+    margin-top: 30px;
+  }
+
   /*========================
       HEADER
     ========================*/
 
-  .background {
+  .background1 {
     /* Positioning */
-    position: absolute;
+    position: fixed;
     display: block;
     /* Box-model */
     width: 65%;
-    margin: 0 17.5%;
+    margin-top: 35px;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+
+    /* Typography */
+
+    /* Visual */
+    z-index: -10;
+
+    /* Misc */
+  }
+
+  .background2 {
+    /* Positioning */
+    position: fixed;
+    display: block;
+    /* Box-model */
+    width: 65%;
+    margin-left: 7.25%;
+
+    /* Typography */
+
+    /* Visual */
+    z-index: -10;
+
+    /* Misc */
+  }
+
+  #bg-height {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 50px;
 
     /* Typography */
 
@@ -668,6 +735,19 @@ input[type=text] {
   /*========================
       CONTAINER
     ========================*/
+
+  #search-fill {
+    /* Positioning */
+    position: relative;
+    top: 130px;
+    /* Box-model */
+    width: 70%;
+    margin: 0 auto;
+    /* Typography */
+    /* Visual */
+    z-index: 3;
+    /* Misc */
+  }
   
   .container {
     position: relative;
@@ -679,7 +759,7 @@ input[type=text] {
   #search-nav {
     /* Positioning */
     position: relative;
-    top: 20px;
+    top: 40px;
     /* Box-model */
     width: 70%;
     margin: 0 auto;
@@ -762,6 +842,14 @@ input[type=text] {
       height: 100%;
     }
 
+  /*========================
+      RESEARCH DATABASE
+    ========================*/
+
+  #link-bottom {
+    margin-bottom: 0px;
+  }
+
     /*========================
       SEARCH POPOUT
     ========================*/
@@ -792,7 +880,7 @@ input[type=text] {
         float:left;
       /* Box-model */
         width:40%;
-        margin-bottom: 60px;
+        margin-bottom: 40%;
       /* Typography */
 
       /* Visual */
@@ -805,7 +893,7 @@ input[type=text] {
         float:right;
       /* Box-model */
         width: 40%;
-        margin-bottom: 60px;
+        margin-bottom: 40%;
       /* Typography */
 
       /* Visual */
@@ -813,12 +901,21 @@ input[type=text] {
       /*Misc */
     }
 
+    #link-top {
+      margin-top: 15px;
+    }
+
+    #link-top2 {
+      margin-top: 20px;
+    }
+
+
     .link-search {
       /* Positioning */
         float:right;
       /* Box-model */
         width: 40%;
-        margin-bottom: 53px;
+        margin-bottom: 40%;
       /* Typography */
 
       /* Visual */
@@ -833,46 +930,122 @@ input[type=text] {
     /*========================
       SEARCH RESULTS
     ========================*/
-    .img-container {
-      float: none;
-      margin: 0 auto;
+
+
+    .link-l-alt {
+      /* Positioning */
+        float:left;
+      /* Box-model */
+        width: 40%;
+        margin-bottom: 50px;
+      /* Typography */
+
+      /* Visual */
+
+      /* Misc */
+    }
+
+    .link-r-alt {
+      /* Positioning */
+        float:right;
+      /* Box-model */
+        width: 40%;
+        margin-bottom: 50px;
+      /* Typography */
+
+      /* Visual */
+
+      /*Misc */
     }
     
-    .img-web img,
-    .img-web-center img,
-    .img-web-last img {
+
+    .img-wrap {
+      float: none;
+      width: 110%;
+      margin-left: -5%;
+      padding-top: 20px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .img-container {
+      position: relative;
+      display: inline-block;
+      width: 25%;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 1.2;
+      text-align: left;
+    }
+
+    .img-container + .img-container {
+      margin-left: 3.5%;
+    }
+
+    #new-line {
+      margin-left: 0;
+    }
+
+    .img-link {
+      position: relative;
+      display: block;
+      height: 0;
+      padding-top: 133%;
+      overflow: hidden;
+    }
+
+
+    .img-src {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
       width: 100%;
+      max-width: 100%;
       height: auto;
+      vertical-align: bottom;
+      border: 2px solid #FFF;
+      border-radius: 5px;
     }
 
-    .img-web {
-      float:left;
-      margin-left: 10%;
-      width: 25%;
-      margin-right: 3%;
+    .description-mobile {
+      display: none;
     }
 
-    .img-web-center {
-      float:left;
-      width: 25%;
-      margin-right: 3%;
+    .description-mobile-header {
+      display: none;
+    }
+    
+    .img-link:hover .img-desc {
+      opacity: 1;
     }
 
-    .img-web-last {
-      float:left;
-      margin-right: -10%;
-      width: 25%;
+    .img-desc p {
+      position: relative;
+      top: 20%;
+      text-align: center;
+      color: #000;
+    }
+    
+    .img-desc {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background:#FFF;
+      border: 3px solid #000;
+      transition: all .2s linear;
     }
 
     .description {
       /* Positioning *//*
       display: none;*/
-      position: relative;
-      top: -190px;
-      float: none;
-      /* Box-model */
-      width: 100%;
-      padding-left: 2%;
       /* Typography */
       font-family: apercumedium;
       font-size: 13px;
@@ -881,16 +1054,7 @@ input[type=text] {
       /* Misc */
     }
 
-    /*.img-web:hover .description,
-    .img-web-center:hover .description,
-    .img-web-last:hover .description {
-      display: block;
-    }
-*/
-
-    .description-mobile {
-      display: none;
-    }
+    
 
     /*========================
       ADVANCED SEARCH
@@ -910,7 +1074,7 @@ input[type=text] {
       position: relative;
       float: left;
       margin-bottom: 10px;
-      min-height: 217px;
+      min-height: 200px;
       width: 20%;
       background-color: #FFF;
       border: 3px solid #000;
@@ -934,10 +1098,14 @@ input[type=text] {
     }
 
     .category-bottom {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .check-form {
+      padding-left: 10px;
+    }
+
+    #last-form {
       padding-left: 10px;
     }
     
@@ -995,6 +1163,15 @@ input[type=text] {
     /*========================
       LOAN
     ========================*/
+
+    .form-bottom {
+      margin-bottom: 50px;
+    }
+
+    .form-selection select {
+    width: 100%;
+    color: #000;
+  }
 
     #form-selection {
       margin-bottom: 10px;
